@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Romantic Gesture For Sanovar ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffeded;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        #infoContainer {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .more-info {
+            margin-top: 20px;
+            display: none;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff5252;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555; /* Changed text color */
+        }
+
+        .heart {
+            color: #ff6b6b;
+        }
+
+        .love-message {
+            font-style: italic;
+            font-size: 18px;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .heart-beat {
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .signature {
+            font-weight: bold;
+            font-size: 18px;
+            color: #ff6b6b;
+            margin-top: 20px;
+        }
+
+        /* Added heart animation */
+        .heart-icon {
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>A Romantic Gesture For Sanovar <span class="heart">❤️</span></h1>
+        <p class="love-message">My Dearest Sanovar.</p>
+        <button id="surpriseBtn">Click here meri jaan <span class="heart-icon">❤️</span></button>
+        <div id="infoContainer" class="info-container">
+            <p id="nameText"></p>
+            <button id="moreInfoBtn">Know more about yourself</button>
+            <div id="moreInfo" class="more-info">
+                <p>I wish to travel the world with my loved one ❤️</p>
+                <p>A big BTS 😍 FAN #ARMY 💜</p>
+                <p>In love with kdramas ❤️</p>
+            </div>
+        </div>
+        <!-- Removed the signature -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#surpriseBtn").click(function() {
+                $("#nameText").html("I love you more and more each day.Your love means a lot to me 💍, and I'm happy to bring you joy 🌎. Every day, our bond grows stronger 📍, like a friendship or a love story 🫀. I cherish our time together, whether we're laughing or talking quietly 🌈. Having you in my life is special, and I'm grateful for it ♥️. Let's keep making each other happy and strong 💋✨💫.<br> <span class='heart'>❤️</span>");
+                $("#infoContainer").slideDown();
+            });
+
+            $("#moreInfoBtn").click(function() {
+                $("#moreInfo").slideDown();
+                $(".heart").addClass("heart-beat");
+            });
+        });
+    </script>
+</body>
+</html>
